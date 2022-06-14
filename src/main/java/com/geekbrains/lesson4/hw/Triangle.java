@@ -1,4 +1,4 @@
-package com.geekbrains.HW4;
+package com.geekbrains.lesson4.hw;
 
 public class Triangle {
     public static double calcAreaTriangle(double a, double b, double c) throws Exception {
