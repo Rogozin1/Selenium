@@ -1,5 +1,6 @@
 package com.geekbrains.lesson6;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -16,7 +17,8 @@ public class NavigationBlock extends BaseView {
     @FindBy(xpath = "//ul[contains(@class,'submenu')]//a[.='T-shirts']")
     private WebElement tShirtsSubmenuTShirtsButton;
 
-    public TShirtsPage clickTShirtsButtonInTShirtsSubmenu() {
+    @Step("Клик на кнопку 'Рубашки' в подменю 'Женщины'")
+    public TShirtsPage clickTShirtsButtonInWomenSubmenu() {
         actions.moveToElement(womenButton)
                 .build()
                 .perform();

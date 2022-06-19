@@ -1,0 +1,1 @@
+{"uuid":"6a59e635-6a36-429f-9519-f9574ccb007e","name":"AutomationPractiseTest","children":["5d82380a-636a-49a0-b185-f51ff583f59d"],"befores":[{"name":"registerDriver","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1655400573253,"stop":1655400573264}],"afters":[],"start":1655400573252,"stop":1655400584052}
