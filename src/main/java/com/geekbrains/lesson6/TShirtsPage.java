@@ -26,7 +26,10 @@ public class TShirtsPage extends BaseView {
 
     @Step("Выбрать цену")
     public TShirtsPage selectPrice(int amount) {
-        actions.dragAndDropBy(priceLeftSlider, amount, 0);
+        actions
+                .dragAndDropBy(priceLeftSlider, amount, 0)
+                .build()
+                .perform();
         return this;
     }
 

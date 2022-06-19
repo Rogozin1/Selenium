@@ -27,3 +27,7 @@ public class NavigationBlock extends BaseView {
         return new TShirtsPage(driver);
     }
 }
+
+//"Клик на кнопку 'Рубашки' в подменю 'Женщины'"
+//
+
