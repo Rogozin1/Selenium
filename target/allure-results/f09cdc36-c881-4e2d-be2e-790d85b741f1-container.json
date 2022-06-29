@@ -1,0 +1,1 @@
+{"uuid":"f09cdc36-c881-4e2d-be2e-790d85b741f1","name":"Test6_YourLogo","children":["b0aa9f99-9089-4e40-934c-f660e366c533"],"befores":[{"name":"registerDriver","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1656220607842,"stop":1656220608146}],"afters":[],"start":1656220607833,"stop":1656220623391}

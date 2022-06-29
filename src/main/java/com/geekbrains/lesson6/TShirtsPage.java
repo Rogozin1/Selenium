@@ -22,8 +22,11 @@ public class TShirtsPage extends BaseView {
     }
 
 
+
+
     @FindBy(xpath = "//ul[@id='ul_layered_id_attribute_group_3']//a")
     private List<WebElement> colors;
+
 
     @Step("Выбрать цвет")
     public TShirtsPage selectColor(String color) {
@@ -36,6 +39,8 @@ public class TShirtsPage extends BaseView {
 
     @FindBy(xpath = "//div[@class='layered_slider_container']//a[1]")
     private WebElement priceLeftSlider;
+
+
 
     @Step("Выбрать цену")
     public TShirtsPage selectPrice(int amount) {

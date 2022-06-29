@@ -28,6 +28,14 @@ public class MyStepdefs {
         new TShirtsPage().selectSize("S");
     }
 
+    @And("^select color orange$")
+    public void selectColorOrange() {
+        new TShirtsPage().selectColor("Orange");
+    }
+
+
+
+
     @And("select price")
     public void selectPrice() {
         new TShirtsPage().selectPrice(100);
@@ -38,15 +46,27 @@ public class MyStepdefs {
         new TShirtsPage().addTShirtToCartByName("Faded");
     }
 
-    @Then("^check total sum$")
+    @And("^check total sum$")
     public void checkTotalSum() {
         new SuccessAddToCartPopup().checkTotalSumm("$18.51");
     }
 
-    @And("select size {string}")
+    @Then("select size {string}")
     public void selectSizeSize(String size) {
         new TShirtsPage().selectSize(size);
     }
+
+//    @After(value = "@close")
+//    public void quitBrowser() {
+//        Selenide.closeWebDriver();
+//    }
+
+
+    @Then("select color {string}")
+    public void selectColorColor(String color) {
+        new TShirtsPage().selectColor(color);
+    }
+
 
     @After(value = "@close")
     public void quitBrowser() {
