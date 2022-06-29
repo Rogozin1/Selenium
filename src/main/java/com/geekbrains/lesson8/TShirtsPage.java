@@ -17,6 +17,17 @@ public class TShirtsPage {
         return this;
     }
 
+    private ElementsCollection colors = $$(By.xpath("//ul[@id='ul_layered_id_attribute_group_3']//a"));
+
+    @Step("Выбрать цвет")
+    public TShirtsPage selectColor(String color) {
+        colors.findBy(Condition.text(color)).click();
+        return this;
+    }
+
+
+
+
     private SelenideElement priceLeftSlider = $(By.xpath("//div[@class='layered_slider_container']//a[1]"));
 
     @Step("Выбрать цену")

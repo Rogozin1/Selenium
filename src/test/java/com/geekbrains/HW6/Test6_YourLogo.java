@@ -42,7 +42,7 @@ public class Test6_YourLogo {
                 .login("spartalex93@test.test", "123456")
                 .navigationBlock.clickTShirtsButtonInWomenSubmenu()
                 .selectSize("S")
-                .selectColor("Blue")
+                .selectColor("Orange")
                 .selectPrice(100)
                 .addTShirtToCartByName("Faded")
                 .checkTotalSumm("$18.51");
